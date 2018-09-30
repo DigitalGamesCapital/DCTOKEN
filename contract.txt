@@ -1,5 +1,5 @@
 pragma solidity ^0.4.16;
-contract GHK{
+contract DC{
 
     uint256 constant private MAX_UINT256 = 2**256 - 1;
     mapping (address => uint256) public balances;
@@ -18,11 +18,11 @@ contract GHK{
     event Approval(address indexed _owner, address indexed _spender, uint256 _value);
    
     function GHK() public {
-        balances[msg.sender] = 3600000000000;               // Give the creator all initial tokens
-        totalSupply = 3600000000000;                        // Update total supply
-        name = "GHK";                                   // Set the name for display purposes
+        balances[msg.sender] = 9000000000000;               // Give the creator all initial tokens
+        totalSupply = 9000000000000;                        // Update total supply
+        name = "Digital Games Capital";                                   // Set the name for display purposes
         decimals =4;                            // Amount of decimals for display purposes
-        symbol = "GHK";                               // Set the symbol for display purposes
+        symbol = "DC";                               // Set the symbol for display purposes
     }
 
     function transfer(address _to, uint256 _value) public returns (bool success) {
